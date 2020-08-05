@@ -1,0 +1,6 @@
+2020-08-02 23:20:20,801 INFO  [CreateLogger] CREATED LOGGER BEFORE SUITE START 
+2020-08-02 23:20:20,831 INFO  [CreateLogger] Suite STARTED 
+2020-08-02 23:20:20,849 INFO  [CreateLogger] Directory Created :: .//TestReports//HTMLReports//Demosite//1.0//080220 
+2020-08-02 23:20:49,432 INFO  [CreateLogger] TOOK SCREENSHOTS FOR THE FAILED TESTS 
+2020-08-02 23:20:53,639 INFO  [CreateLogger] Printed Test Stats to Console 
+2020-08-02 23:20:53,639 INFO  [CreateLogger] Suite ENDED 

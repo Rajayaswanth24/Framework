@@ -1,0 +1,6 @@
+2020-07-31 16:04:23,644 INFO  [CreateLogger] CREATED LOGGER BEFORE SUITE START 
+2020-07-31 16:04:23,668 INFO  [CreateLogger] Suite STARTED 
+2020-07-31 16:05:14,939 INFO  [CreateLogger] Regitration Completed successfully 
+2020-07-31 16:05:14,940 INFO  [CreateLogger] TOOK SCREENSHOTS FOR THE PASSED TESTS 
+2020-07-31 16:05:21,490 INFO  [CreateLogger] Printed Test Stats to Console 
+2020-07-31 16:05:21,490 INFO  [CreateLogger] Suite ENDED 
