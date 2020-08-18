@@ -102,7 +102,7 @@ public void setup() {
 
 @Parameters({ "optional-browser" })
 
-@BeforeMethod
+/*@BeforeMethod
 
 public void beforeMethod(@Optional("optionalvalue") String browserFromSuiteXML, Method method) throws IOException {
 
@@ -180,7 +180,7 @@ Assert.fail("Failed to Create Driver Instance and Launched Browser: " + e.toStri
 
 }
 
-}
+}*/
 
 @BeforeTest
 
@@ -234,39 +234,45 @@ Assert.fail("Failed To Configure Extent Reports" + e.toString());
 
 }
 
-@Test(enabled=false)
+
+@Test(priority=1)
+public void Caseid_02_05_AlertsPage_Raja() throws IOException, ParseException {
+	
+	oCaseid_02_05_AlertsPage_Raja.Caseid_02_05_AlertsPage();
+	System.out.println("case 1 completed");
+	
+}
+
+
+
+@Test(priority=2)
+public void Case_04_Frames_Raja() throws IOException{
+	oCase_04_Frames_Raja.Case_04_Frames();
+	System.out.println("case 2 completed");
+}
+/*@Test()
 public void Caseid_01_RegistrationPage_Raja() throws IOException, ParseException {
 	oCaseid_01_RegistrationPage_Raja.Caseid_01_RegistrationPage();
 }
 
-@Test(enabled=false)
-public void Caseid_02_05_AlertsPage_Raja() throws IOException, ParseException {
-	oCaseid_02_05_AlertsPage_Raja.Caseid_02_05_AlertsPage();
-}
-
-@Test(enabled=false)
-public void Case_04_Frames_Raja() throws IOException{
-	oCase_04_Frames_Raja.Case_04_Frames();
-}
-
-@Test(enabled=false)
+@Test()
 public void case_03_Windows_Raja() throws IOException{
 	ocase_03_Windows_Raja.case_03_Windows();
 }
-@Test(enabled=false)
+@Test()
 public void Case_03_02_WindowsPage_Raja() throws IOException{
 	oCase_03_02_WindowsPage_Raja.Case_03_02_WindowsPage();
 }
 
-@Test(enabled=false)
+@Test()
 public void Caseid_03_03_Windows_Raja() throws IOException {
 	oCaseid_03_03_Windows_Raja.Caseid_03_03_Windows();
 }
 
-@Test(enabled=true)
+@Test()
 public void CaseId_07_01_GilletteSignin_Raja() throws IOException, ParseException {
 	oCaseId_07_01_GilletteSignin_Raja.CaseId_07_01_GilletteSignin();
-}
+}*/
 @AfterMethod
 
 public void afterMethod(ITestResult result) {

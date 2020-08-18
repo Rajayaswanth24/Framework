@@ -13,10 +13,14 @@ import ObjectRepository.AlertsPage;
 public class Caseid_02_05_AlertsPage_Raja extends ReUsableLibrary {
 	
 	public void Caseid_02_05_AlertsPage() throws IOException{
+		String browser = getElementFromPropFile("Browser");
+		OpenWDInstance(browser);
 		
 		String appURL = getElementFromPropFile("Alertsurl");
 		String ConfirmMessage;
       launchApplication(appURL);
+      custom9Sleep();
+      custom9Sleep();
        
       //Validating Alert Box
       

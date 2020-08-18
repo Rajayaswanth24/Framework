@@ -37,6 +37,7 @@ public class Case_03_02_WindowsPage_Raja extends ReUsableLibrary{
     logger.log(LogStatus.INFO, "new WindowTitle - "+title);
     Assert.assertTrue(title.equals("http://www.sakinalium.in/"), "URL Validation Failed");
     logger.log(LogStatus.INFO, "New  window URL Validation Completed");
+    System.out.println("New  window URL Validation Completed");
    
 	}
 }

@@ -14,10 +14,15 @@ public class Case_04_Frames_Raja extends ReUsableLibrary{
 	
 	public void Case_04_Frames() throws IOException{
 		
+		String browser = getElementFromPropFile("Browser");
+		OpenWDInstance(browser);
+		
+		
 		String appURL = getElementFromPropFile("Framesurl");
 		
       launchApplication(appURL);
-      
+      custom9Sleep();
+      custom9Sleep();
       driver.switchTo().frame("SingleFrame");
       logger.log(LogStatus.INFO, "Switched to Single Inner Frame");
       driver.findElement(FramesPage.inputbox).sendKeys("Raja");
@@ -37,7 +42,7 @@ public class Case_04_Frames_Raja extends ReUsableLibrary{
       logger.log(LogStatus.INFO, "Switched to inner frame inside multiple inner frame");
       driver.findElement(FramesPage.inputbox).sendKeys("Raja");
       logger.log(LogStatus.INFO, "entered the data in input box in multiple frame ");
-       
+       System.out.println("entered the data in input box in multiple frame");
 		
 	}
 
