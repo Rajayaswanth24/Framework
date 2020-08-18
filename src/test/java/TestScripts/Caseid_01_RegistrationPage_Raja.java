@@ -68,7 +68,7 @@ public class Caseid_01_RegistrationPage_Raja extends ReUsableLibrary{
 	Select sl=new Select(countries);
 	sl.selectByVisibleText("India");
 	logger.log(LogStatus.INFO, "Selected countries");
-	
+	System.out.println("Selected countries");
 	//Selecting year
 	
 	WebElement Years=driver.findElement(Registrationpage.yearbox);

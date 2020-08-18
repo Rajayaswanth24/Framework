@@ -148,11 +148,11 @@ public class ReUsableLibrary {
 
 	
 
-		public static void OpenWDInstance() throws IOException {
+		public static void OpenWDInstance(String browser) throws IOException {
 
 		try {
 
-		browser = getElementFromPropFile("Browser");
+	//	browser = getElementFromPropFile("Browser");
 
 		if (browser.equals("Firefox")) {
 
